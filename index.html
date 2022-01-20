@@ -2,9 +2,9 @@
   <head>
     <meta charset="utf-8" />
 
-    <title>Ngoc Embedded STG</title>
+    <title>Ngoc Widget STG</title>
     <meta name="description" content="The HTML5 Herald" />
-    <meta name="author" content="Nga Thai" />
+    <meta name="author" content="Ngoc" />
   </head>
 
   <body>
@@ -12,11 +12,29 @@
 
     <table>
       <tr>
-        <td>Company:</td>
-        <td>ParadoxVN - Nga: Nestlé (UAT)</td>
+        <td>Language:</td>
+        <td>
+          <select id="language" onchange="changeLanguage()">
+            <option value="en">English (en)</option>
+            <option value="en-US">English (en-US)</option>
+            <option value="ar">Arabic</option>
+            <option value="he">Hebrew (he)</option>
+            <option value="ja">Japanese</option>
+            <option value="es">Spanish (es)</option>
+            <option value="es-em">Spanish (es-em)</option>
+            <option value="vi">Vietnamese</option>
+            <option value="zh-tw">Chinese Traditional (zh-tw)</option>
+            <option value="zh-cn">Chinese Simplified (zh-cn)</option>
+            <option value="zh-hans">Chinese Simplified (zh-hans)</option>
+          </select>
+        </td>
       </tr>
       <tr>
-        <td>Embedded name:</td>
+        <td>Company:</td>
+        <td>ParadoxVN - Ngoc Compnay</td>
+      </tr>
+      <tr>
+        <td>Widget name:</td>
         <td>Candidate Care Embedded</td>
       </tr>
     </table>
@@ -40,7 +58,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <div style="min-width: 400px; min-height: 300px;padding: 0px" id="my-chat-widget"></div>
     <script type='text/javascript'>
         var oliviaChatData = oliviaChatData || [];
         var oliviaChatBaseUrl =  'https://stg.paradox.ai';
@@ -56,6 +73,5 @@
             s.parentNode.insertBefore(apply, s);
         })();
     </script>
-    
   </body>
 </html>
